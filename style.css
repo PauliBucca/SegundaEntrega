@@ -1,0 +1,118 @@
+@import url('https://fonts.googleapis.com/css2?family=Delius+Swash+Caps&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Gentium+Basic&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Delius Swash Caps', cursive;
+    background: linear-gradient(90deg, #fde9e1 30%, #b9cfcf 120%);
+}
+
+/* Aca comienza el navbar */
+.container-header{
+    width: 100%;
+    height: 7rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.container-list{
+    display: flex;
+    flex-direction: row;
+}
+.container-link{
+    padding: 3rem;
+    list-style: none;
+    border-style: none;
+}
+.logotipo{
+    height: 7rem;
+    width: 11rem;
+    padding: 0.3rem 2rem;
+    margin-left: 5px;
+    filter: brightness(1.1);
+    mix-blend-mode: multiply;
+}
+.link{
+    padding: 0.5rem;
+    border-radius: 1rem;
+    text-decoration: none;
+    color: black;
+    font-family: Delius Swash Caps, sans-serif;
+}
+.link:hover{
+    background-color: #93b4a96c;
+    color: white;
+    text-decoration: overline;
+}
+/* Acá comienza el main */
+.container-intro{
+    height: 30rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center; 
+}
+.logo{
+    font-size: 6rem;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    font-family: 'Gentium Basic', serif;
+    border-top: solid black 5px;
+    
+}
+.logo1{
+    font-size: 6rem;
+    margin-bottom: 2rem;
+    font-family: 'Gentium Basic', serif;
+    border-bottom: solid black 5px;
+}
+.foto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 36rem;
+    height: 22rem;
+    border-radius: 10px;
+    margin-right: 1rem;
+}
+.container-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:2rem;
+}
+
+.prueba{
+    font-weight: bold;
+    color: black;
+    border: solid black 1.5px;
+    padding: 15px;
+    margin-top: 30px;
+    border-radius: 30px;
+    text-decoration: none;
+    background: linear-gradient(to left, #f0c9bbcc 20%, #b2f5f5b0 100%)
+}
+.prueba:hover{
+    text-decoration: underline;
+}
+.sobre{
+    height: 7rem;
+    width: 100%;
+    height: 150px;
+    display: flexbox;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 150px;
+    text-align: center;
+}
+.about{
+    text-decoration: underline;
+    margin-bottom: 8px;
+}
+.primerP{
+    padding-bottom: 5px;
+}
