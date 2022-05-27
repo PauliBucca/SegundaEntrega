@@ -20,7 +20,6 @@ body{
 }
 .container-list{
     display: flex;
-    flex-direction: row;
 }
 .container-link{
     padding: 3rem;
@@ -85,7 +84,6 @@ body{
     align-items: center;
     margin-left:2rem;
 }
-
 .prueba{
     font-weight: bold;
     color: black;
@@ -115,4 +113,10 @@ body{
 }
 .primerP{
     padding-bottom: 5px;
+}
+.logowp{
+    width: 50px;
+    position: fixed;
+    bottom: 30px;
+    right: 40px;
 }
