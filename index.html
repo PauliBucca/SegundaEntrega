@@ -6,21 +6,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bienvenidos a Espacio Yoga ♥</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
     <header>
-        <div class="container-header">
-            <img src="./img/EspacioYoga.jpg" class="logotipo">
-            <ul class="container-list">
-            <li class="container-link"><a href="#" class="link">Quienes somos</a></li>
-            <li class="container-link"><a href="#" class="link">Clases</a></li>
-            <li class="container-link"><a href="#" class="link">Profesores</a></li>
-            <li class="container-link"><a href="#" class="link">Precios</a></li>
-            <li class="container-link"><a href="#" class="link">Contacto</a></li>
-            </ul>
-        </div>
+        <nav class="navbar">
+            <div class="container-header">
+                <img src="./img/EspacioYoga.jpg" class="logotipo">
+                <ul class="container-list">
+                    <li class="container-link"><a href="#nosotros">Quienes somos</a></li>
+                    <li class="container-link"><a href="#clases">Clases</a></li>
+                    <li class="container-link"><a href="#Profesores">Profesores</a></li>
+                    <li class="container-link"><a href="#">Precios</a></li>
+                    <li class="container-link"><a href="#">Contacto</a></li>
+                </ul>
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </nav>
     </header>
     <main>
+        <!-- Seccion uno: intro -->
         <section class="container-intro">
             <div class="container-texto">
                 <h1  class="logo">Espacio</h1>
@@ -30,7 +35,8 @@
             </div>
             <img src="./img/chica-practicando-yoga-roca_1286-3791.jpg" class="foto" alt="chicapracticayoga">
         </section>
-        <section class="sobre">
+        <!-- Sección dos: Sobre Nostros -->
+        <section class="sobre" id="nosotros">
             <h2 class="about">Sobre Nosotros</h2>
             <p class="primerP">Bievenido a nuestro espacio en Mendoza, Argentina. Un lugar para Yoga, un lugar para el alma. </p>
             <p class="primerP"> Creemos que el yoga es para todos y nos enfocamos en el camino de tu despertar, en tu nutrición y en conocer tu verdadera esencia.</p>
@@ -38,6 +44,51 @@
             <p class="primerP">Nos esforzamos por cultivar una comunidad que brinde apoyo, sin juicios, donde todos encajen y puedan desarrollar todo su potencial.</p>
         </section>
         <a href="https://www.google.com/" target="_blank"><img src="./img/logowp.png" alt="logo" class="logowp"></a>
+        <!-- Seccion tres: clases -->
+        <section class="clases" id="clases">
+            <h2>Nuestras Clases</h2>
+            <p>La flexibilidad en el yoga se crea con paciencia y constancia mediante la practica, pero ¿cuál es el tipo de yoga más conveniente para tí? Acá te explicamos cada una de las modalidades que podés practicar en Espacio Yoga...</p>
+            <div class="container-tiposdeyoga">
+                <div class="tipodeyoga">
+                    <h3>Hatha Yoga</h3>
+                    <p>Esta práctica se focaliza en los asanas, o posturas, y en la pranayama, o respiración, en contraposición a otros tipos de yoga que tratan otros aspectos, como el yoga budista o el tantra. Por todo lo explicado, esta modalidad es perfecta para aquellos que quieran iniciarse en esta práctica, ya que en estas clases se introducen los fundamentos del yoga, tanto los asanas como el pranayama.</p>
+                </div>
+                <div class="tipodeyoga">
+                    <h3>Yoga Kundalini</h3>
+                    <p>Este tipo de yoga, además de las posturas y la respiración, incorpora técnicas de meditación y mantras. Se basa en la repetición de una secuencia y la respiración continua con el fin de poner en movimiento la energía del primer al último chacra. Esta es una buena práctica para aquellos que tengan altos niveles de estrés y puedan beneficiarse de prácticas meditativas para combatir sus síntomas.</p>
+                </div>
+                <div class="tipodeyoga">
+                    <h3>Yoga Vinyasa</h3>
+                    <p>Esta palabra se podría traducir como ‘alinear en una forma concreta’. Derivado del hatha, este tipo de yoga tiene la meta de sincronizar respiración y movimiento para crear cierta fluidez. Este estilo es perfecto para los que quieran fortalecer los músculos y aprender nuevas posturas y una secuencia distinta en cada clase.</p>
+                </div>
+            </div>
+        </section>
+                <!-- seccion cuatro: profes -->
+                <section class="profesores" id="Profesores">
+                    <h2>Conocé a nuestros profes...</h2>
+                    <p>Sabemos lo importante y la tranquilidad que representa saber la capacitación profesional con la que cuentan aquellas personas a las que le confiamos nuestro cuerpo. Por eso, en esta sección, queremos invitarte a conocer a los profesores que trabajan en Espacio Yoga</p>
+                    <div class="container-profes">
+                        <div class="profe">
+                            <img src="./img/ProfeAgustina.jpeg" alt="Agustina">
+                            <h3>Agustina</h3>
+                            <p>Ella es Agustina, profesora de yoga con amplia experiencia en asanas. Con un  método muy claro y práctico para entender  filosofía yoga que durante años desarrolla en los cursos. Es cosmiatra profesional con orientación naturista, especialista en fitoterapia y medicinas alternativas.</p>
+                        </div>
+                        <div class="profe">
+                            <img src="./img/ProfeAndrea.jpeg" alt="Andrea">
+                            <h3>Andrea</h3>
+                            <p>Ella es Andrea, ha estudiado hatha yoga, flow, vinyasa, kundalini, ashtanga guiada y ashtanga Mysore. Enseña pranayamas (control de la respiración), los bhandas (contracciones de nuestro cuerpo necesarias para cuidarnos en la práctica), alineación y apoyos correspondientes.</p>
+                        </div>
+                        <div class="profe">
+                            <img src="./img/ProfeFrancisco.jpeg" alt="Francisco">
+                            <h3>Francisco</h3>
+                            <p>El es Francisco, instructor de Yoga, profesor de Educación Física especializado en Fitness y profesor de entrenamiento funcional. Ha trabajado en distintas áreas como: Centros de Yoga, colegios, empresas y teatros; con el objetivo de reencontrar a cada uno en su fluidez, disfrute y ritmo.</p>
+                        </div>
+                        <div class="profe">
+                            <img src="./img/ProfeMarcela.jpeg" alt="Marcela">
+                            <h3>Marcela</h3>
+                            <p>Ella es Marcela, deportista profesional desde los 12 años, practicante e instructora hatha yoga y vinyasa, elongación, relajacion para complejidades oseas, emocionales y de atención, respiración y meditación para todas las edades.</p>
+                        </div>
+                    </div>
+                </section>
     </main>
-</body>
 </html>

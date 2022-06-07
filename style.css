@@ -9,50 +9,41 @@ body{
     font-family: 'Delius Swash Caps', cursive;
     background: linear-gradient(90deg, #fde9e1 30%, #b9cfcf 120%);
 }
-
-/* Aca comienza el navbar */
 .container-header{
-    width: 100%;
-    height: 7rem;
     display: flex;
+    flex-direction:row;
     justify-content: space-between;
     align-items: center;
+    padding: 1rem 5rem 1rem 0.3rem;
 }
 .container-list{
-    display: flex;
-}
-.container-link{
-    padding: 3rem;
-    list-style: none;
-    border-style: none;
+    display: none;
 }
 .logotipo{
-    height: 7rem;
+    height: auto;
     width: 11rem;
-    padding: 0.3rem 2rem;
+    padding: 0.1rem 2rem;
     margin-left: 5px;
     filter: brightness(1.1);
     mix-blend-mode: multiply;
 }
-.link{
-    padding: 0.5rem;
-    border-radius: 1rem;
-    text-decoration: none;
-    color: black;
-    font-family: Delius Swash Caps, sans-serif;
-}
-.link:hover{
-    background-color: #93b4a96c;
-    color: white;
-    text-decoration: overline;
-}
 /* Acá comienza el main */
+/* Seccion uno: introduccion */
 .container-intro{
-    height: 30rem;
-    width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem 0;
+    width: 100%;
+}
+.container-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left:1rem;
+    order: 2;
 }
 .logo{
     font-size: 6rem;
@@ -60,7 +51,6 @@ body{
     margin-bottom: 0.5rem;
     font-family: 'Gentium Basic', serif;
     border-top: solid black 5px;
-    
 }
 .logo1{
     font-size: 6rem;
@@ -72,17 +62,10 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 36rem;
-    height: 22rem;
+    max-width: 100%;
+    width: 80%;
+    height: auto;
     border-radius: 10px;
-    margin-right: 1rem;
-}
-.container-texto{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    margin-left:2rem;
 }
 .prueba{
     font-weight: bold;
@@ -94,29 +77,211 @@ body{
     text-decoration: none;
     background: linear-gradient(to left, #f0c9bbcc 20%, #b2f5f5b0 100%)
 }
-.prueba:hover{
-    text-decoration: underline;
-}
-.sobre{
-    height: 7rem;
-    width: 100%;
-    height: 150px;
-    display: flexbox;
-    justify-content: center;
-    align-items: center;
-    padding: 10px 150px;
-    text-align: center;
-}
-.about{
-    text-decoration: underline;
-    margin-bottom: 8px;
-}
-.primerP{
-    padding-bottom: 5px;
-}
 .logowp{
     width: 50px;
     position: fixed;
     bottom: 30px;
     right: 40px;
+}
+/* Seccion dos: Sobre nosotros */
+.sobre{
+    margin: 1rem 0.5rem;
+    padding: 1rem;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: justify;
+    border: 3px solid rgb(255, 255, 255);
+    border-radius: 15px;
+}
+.about{
+    text-decoration: underline;
+    margin-bottom: 1rem;
+}
+.primerP{
+    padding-bottom: 0.5rem;
+}
+/* Seccion tres: clases */
+.clases, 
+.profesores{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border: 3px solid white;
+    box-shadow: 7px -4px 16px -3px rgba(179,159,159,0.74);
+    border-radius: 10px;
+    max-width: 100%;
+    margin: 2rem 0.5rem;
+}
+.clases h2,
+.profesores h2{
+    text-align: center;
+    padding: 2rem 0rem 1rem;
+    text-decoration: underline;
+}
+.clases p,
+.profesores p{
+    text-align: center;
+    padding: 0.5rem 3rem;
+}
+.container-tiposdeyoga{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    padding: 2rem 1rem;
+    margin: 2rem auto;
+    border-radius: 20px;
+    background-color: hsl(10, 50%, 90%);
+    box-shadow: 7px -4px 16px -3px rgba(179,159,159,0.74);
+}
+.tipodeyoga{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(2, 60%, 97%);
+    border-radius: 20px;
+    padding: 1rem;
+    margin: 1rem;
+}
+.tipodeyoga h3{
+    text-align: center;
+    padding: 0.2rem 1rem 0.5rem;
+    text-decoration: underline;
+}
+.tipodeyoga p{
+    padding: 0;
+    text-align: justify;
+}
+/* seccion cuatro: profes */
+.container-profes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: 80%;
+    padding: 2rem 1rem;
+    margin: 0rem auto;
+    border-radius: 20px;
+}
+.profe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    border: 3px solid white;
+    border-radius: 20px;
+    padding: 0.5rem 0.3rem;
+    margin: 1rem;
+}
+.profe h3{
+    text-align: center;
+    padding: 0.5rem 1rem 0.2rem;
+    text-decoration: underline;
+}
+.profe p{
+    text-align: center;
+    padding: 0.1rem 1rem;
+}
+.profe p::first-letter{
+    font-size: 1.5rem;
+}
+.profe img{
+    max-width: 100%;
+    width: 90%;
+    height: 20rem;
+    border-radius: 20px;
+    margin: 0.5rem;
+}
+@media (min-width: 1024px) {
+    .container-header{
+        padding: 1rem 0.8rem 1rem 0.2rem;
+    }
+    .container-list{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin-right: 2rem;
+    }
+    .container-link{    
+        display: flex;
+        list-style: none;
+        border-style: none;
+    }
+    .container-link a{
+        padding: 1rem;
+        margin: 1rem 2rem;
+        border-radius: 10px;
+        text-decoration: none;
+        color: black;
+        font-family: Delius Swash Caps, sans-serif;
+    }
+    .container-header i{
+        display: none;
+    }
+    .logotipo{
+        margin-left: 0px;
+    }
+    .container-link a:hover{
+        background-color: #bac2bf86;
+        color: white;
+        text-decoration: overline;
+        padding: 15px;
+    }
+    .container-intro{
+        flex-direction: row;
+        max-width: 96%;
+        margin: 2rem;
+    }
+    .container-texto{
+        margin: 1rem;
+        padding: 0.5rem 1rem;
+    }
+    .prueba:hover{
+        text-decoration: underline;
+    }
+    .foto{
+        width: 48%;
+        height: auto;
+        order: 2;
+        padding: 1rem;
+        margin: 1rem 1rem 1rem 3rem;
+        border-radius: 30px;
+    }
+    .clases p,
+    .profesores p{
+        text-align: center;
+    }
+    .container-tiposdeyoga{
+        flex-direction: row;
+    }
+    .container-profes{
+        margin: 0.5rem;
+        flex-direction: row;
+        max-width: 100%;
+        padding: 0;
+    }
+    .profe{
+        height: 49rem;
+        max-width: 22%;
+        padding: 1rem;
+        justify-content: start;
+        overflow-x: hidden;
+    }
+    .profe img{
+        width: auto;
+        height: auto;
+        padding-top: 1rem;
+        border-radius: 0px;
+    }
+    .profe p{
+        padding: 0.5rem;
+    }
 }
