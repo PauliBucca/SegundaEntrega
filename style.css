@@ -9,15 +9,18 @@ body{
     font-family: 'Delius Swash Caps', cursive;
     background: linear-gradient(90deg, #fde9e1 30%, #b9cfcf 120%);
 }
-.container-header{
+.navbar{
     display: flex;
     flex-direction:row;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem 5rem 1rem 0.3rem;
+    padding: 1rem 2.8rem 1rem 0.3rem;
 }
 .container-list{
     display: none;
+}
+.navbar i{
+    font-size: 1.5rem;
 }
 .logotipo{
     height: auto;
@@ -46,17 +49,21 @@ body{
     order: 2;
 }
 .logo{
-    font-size: 6rem;
+    font-size: 2.5rem;
     margin-top: 1rem;
     margin-bottom: 0.5rem;
     font-family: 'Gentium Basic', serif;
     border-top: solid black 5px;
 }
 .logo1{
-    font-size: 6rem;
+    font-size: 2.5rem;
     margin-bottom: 2rem;
     font-family: 'Gentium Basic', serif;
     border-bottom: solid black 5px;
+}
+.container-texto p{
+    text-align: center;
+    margin: 0.2rem 1rem;
 }
 .foto{
     display: flex;
@@ -73,15 +80,16 @@ body{
     border: solid black 1.5px;
     padding: 15px;
     margin-top: 30px;
+    border: 1.5px solid white;
     border-radius: 30px;
     text-decoration: none;
     background: linear-gradient(to left, #f0c9bbcc 20%, #b2f5f5b0 100%)
 }
 .logowp{
-    width: 50px;
+    width: 30px;
     position: fixed;
-    bottom: 30px;
-    right: 40px;
+    bottom: 50px;
+    right: 30px;
 }
 /* Seccion dos: Sobre nosotros */
 .sobre{
@@ -101,11 +109,13 @@ body{
     margin-bottom: 1rem;
 }
 .primerP{
-    padding-bottom: 0.5rem;
+    text-align: center;
 }
 /* Seccion tres: clases */
 .clases, 
-.profesores{
+.profesores,
+.precios,
+footer{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -117,7 +127,8 @@ body{
     margin: 2rem 0.5rem;
 }
 .clases h2,
-.profesores h2{
+.profesores h2,
+.precios h2{
     text-align: center;
     padding: 2rem 0rem 1rem;
     text-decoration: underline;
@@ -156,10 +167,11 @@ body{
 }
 .tipodeyoga p{
     padding: 0;
-    text-align: justify;
+    text-align: center;
 }
 /* seccion cuatro: profes */
-.container-profes{
+.container-profes,
+.container-precios{
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -199,46 +211,150 @@ body{
     border-radius: 20px;
     margin: 0.5rem;
 }
+/* seccion cinco: precios */
+.container-precios{
+    padding:1rem;
+    margin: 0 auto;
+}
+.precio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 300px;
+    box-shadow: 7px -4px 16px -3px rgba(179,159,159,0.74);
+    border-radius: 20px;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    background-color: hsl(2, 60%, 97%);
+}
+.precio p:first-child{
+    text-align: center;
+    padding: 0.5rem;
+    font-size: 1.3rem;
+    font-weight: 400;
+}
+.precio p{
+    font-size: 1.7rem;
+    font-weight: 900;
+    padding: 10px;
+}
+/* Footer */
+.container-contacto h3{
+    text-decoration: underline;
+    font-size: 2rem;
+    text-align: center;
+    margin: 1rem;
+}
+.caja1,
+.caja2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+    margin: 1rem;
+}
+.caja1 h4,
+.caja2 h4{
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.5rem;
+}
+i{
+    margin-right: .4rem;
+}
+.container-redes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    margin-top: 3rem;
+    gap: 10px;
+}
+.container-redes a i{
+    font-size: 1.5rem;
+}
+.container-jupiter{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+iframe{
+    text-align: center;
+    width: 90%;
+    height: 300px;
+    padding: 1rem;
+    margin: 1rem;
+}
 @media (min-width: 1024px) {
-    .container-header{
-        padding: 1rem 0.8rem 1rem 0.2rem;
+    .navbar{
+        padding: 1rem;
     }
     .container-list{
         display: flex;
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        margin-right: 2rem;
     }
     .container-link{    
         display: flex;
         list-style: none;
         border-style: none;
+        margin: 2rem;
+        position: relative;
     }
     .container-link a{
-        padding: 1rem;
-        margin: 1rem 2rem;
+        margin: 0rem;
+        padding: 5px 2px;
         border-radius: 10px;
         text-decoration: none;
         color: black;
         font-family: Delius Swash Caps, sans-serif;
     }
-    .container-header i{
+    .container-menu{
         display: none;
     }
     .logotipo{
         margin-left: 0px;
     }
-    .container-link a:hover{
+    /* Efecto con after y hover para los links. En el after: Llamo a a, le aplico el pesudoelemento after con todos los estilos que le quiero aplicar, le doy una position absolute para colocar el after arriba/abajo/a la derecha/a la izquierda, le doy transform scale 0 para que no me lo muestre permanentemente y la transition -duracion-. Luego, llamo al padre, le doy una position relative. Finalmente llamo de nuevo al elemento a con la pseudoclase hover y el pseudoelemento after y le paso los estilos que le quiero aplicar como el transform scale 1 para que cuando pase el mouse se muestre */
+    .container-link a::after{
+        content: "";
+        height: 2px;
+        width: 100%;
+        background-color:white;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        transform: scale(0);
+        transition: transform .30s linear;
+    }
+    .container-link a:hover::after{
+        transform-origin: bottom left;
+        transform: scale(1);
+    }
+    /* .container-link a:hover{
+        transition: all 0.5s;
         background-color: #bac2bf86;
         color: white;
         text-decoration: overline;
         padding: 15px;
+    } */
+    .logo{
+        font-size: 6rem;
+        padding-top: 0.5rem;
     }
+    .logo1{
+        font-size: 6rem;
+        padding-bottom: 0.5rem;
+    }   
     .container-intro{
         flex-direction: row;
-        max-width: 96%;
-        margin: 2rem;
+        max-width: 100%;
+        width: 90%;
+        margin: 0 auto;
     }
     .container-texto{
         margin: 1rem;
@@ -248,12 +364,16 @@ body{
         text-decoration: underline;
     }
     .foto{
-        width: 48%;
+        width: 80%;
         height: auto;
         order: 2;
-        padding: 1rem;
-        margin: 1rem 1rem 1rem 3rem;
+        padding: 0;
         border-radius: 30px;
+    }
+    .tipodeyoga{
+        justify-content:flex-start;
+        height: 28rem;
+        width: 18rem;
     }
     .clases p,
     .profesores p{
@@ -269,19 +389,241 @@ body{
         padding: 0;
     }
     .profe{
-        height: 49rem;
+        height: 40rem;
         max-width: 22%;
         padding: 1rem;
         justify-content: start;
-        overflow-x: hidden;
     }
     .profe img{
         width: auto;
-        height: auto;
-        padding-top: 1rem;
-        border-radius: 0px;
+        max-height: 15rem;
+        height: 60px;
+        padding-top: 0.2rem;
+        border-radius: 20px;
     }
     .profe p{
         padding: 0.5rem;
+    }
+    .container-precios{
+        flex-direction: row;
+        gap: 60px;
+        max-width: 100%;
+        align-items: flex-start;
+    }
+    .precio{
+        width:130px;
+        height: 11rem;
+    }
+    footer{
+        flex-direction: row;
+    }
+    .container-contacto{
+        flex-direction: column;
+        width: 100%;
+    }
+    
+    .container-jupiter{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+    }
+    .caja1,
+    .caja2{
+        margin: 30px;
+    }
+    .container-redes{
+        gap: 20px;
+    }
+    .container-redes a i{
+        font-size: 2rem;
+    }
+
+    iframe{
+        max-width: 100%;
+        width: 90%;
+        height: 30rem;
+    }
+}
+@media (min-width: 688px) {
+.logo,
+.logo1{
+    font-size: 5rem; 
+}
+.navbar{
+    padding-right: 4.5rem;
+}
+.container-texto{
+    margin: 1rem;
+}
+.foto{
+    width: 400px;
+    height: auto;
+}
+.container-precios{
+    flex-direction: row;
+    max-width: 100%;
+    width: 90%;
+    align-items: flex-start;
+}
+.precio{
+    width: 110px;
+    height: 12rem;
+}
+.logowp{
+    width: 40px;
+}
+iframe{
+    margin-left: 2rem;
+}
+}
+@media (min-width:375px){
+    .profe img{
+        width: auto;
+        height: 200px;
+    }
+    
+}
+@media (min-width:360px){
+    .profe img{
+        width: auto;
+        height: 200px;
+    }
+    
+}
+@media (min-width:1100px) {
+    .logo,
+    .logo1{
+        font-size: 6rem;
+    }
+    .foto{
+        width: 34rem;
+        height: auto;
+    }
+    .profe{
+        height: 40rem;
+    }
+    .tipodeyoga{
+        justify-content:flex-start;
+        height: 25rem;
+        width: 18rem;
+    }
+
+}
+@media (min-width:1200px){
+    .container-link a:hover{
+        transition: all 0.5s;
+        background-color: #bac2bf86;
+        color: white;
+        text-decoration: overline;
+        padding: 15px;
+    }
+    .container-link a:hover::after{
+        transform: scale(0);
+    }
+    .logo,
+    .logo1{
+        font-size: 6rem;
+    }
+    .foto{
+        width: 38rem;
+        height: auto;
+    }
+    .profe{
+        height: 35rem;
+    }
+}
+@media (min-width:1280px){
+    .logo,
+    .logo1{
+        font-size: 6rem;
+    }
+    .foto{
+        width: auto;
+        height: auto;
+    }
+    .tipodeyoga{
+        height: 21rem;
+    }
+    .profe{
+        height: 35rem;
+    }
+    .profe img{
+        max-width: 100%;
+        width: 90%;
+        height: auto;
+        margin: 0;
+    }
+    .container-precios{
+        flex-direction: row;
+        justify-content: space-between;
+        max-width: 100%;
+        width: 90%;
+        margin: 0 1rem;
+        align-items: flex-start;
+    }
+    .precio{
+        height: 11rem;
+        width:150px;
+    }
+    footer{
+        flex-direction: row;
+    }
+    .container-contacto{
+        flex-direction: column;
+        width: 100%;
+    }
+    iframe{
+        max-width: 100%;
+        width: 90%;
+        height: 30rem;
+    }
+}
+@media (min-width:800px){
+    .logowp{
+        width: 40px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .container-precios{
+        flex-direction: row;
+        max-width: 100%;
+        width: 90%;
+    }
+    .precio{
+        height: 12rem;
+    }
+}
+@media (min-width:1000px){
+    .logowp{
+        width: 45px;
+        bottom: 15px;
+        right: 15px;
+    }
+    .container-precios{
+        flex-direction: row;
+        max-width: 100%;
+        width: 90%;
+    }
+    .precio{
+        height: 12rem;
+        width: 10rem;
+    }
+    footer{
+        flex-direction: row;
+    }
+    .container-contacto{
+        flex-direction: column;
+        width: 100%;
+    }
+    iframe{
+        max-width: 100%;
+        width: 90%;
+        height: 30rem;
+    }
+}
+@media (min-width:768px) {
+    iframe{
+        max-width: 100%;
     }
 }
